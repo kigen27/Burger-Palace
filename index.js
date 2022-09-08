@@ -352,3 +352,15 @@ $(function () {
 
     })
 });
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'f129388019msh3ed660ad8fd434dp13ac8ejsn839fb9108ff6',
+		'X-RapidAPI-Host': 'burgers1.p.rapidapi.com'
+	}
+};
+
+fetch('https://burgers1.p.rapidapi.com/burgers', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
