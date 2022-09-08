@@ -43,7 +43,7 @@ Burger.prototype.calculateTotal = function () {
         this.price = this.size.price;
     }
 
-    if (this.crust) {
+     if (this.crust) {
         this.price = this.price + this.crust.price;
     }
 
